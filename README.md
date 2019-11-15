@@ -47,8 +47,8 @@ $ npm run prod ou npm run prod-win
  ---
  # Postman - Testes
  ---
- Importar no Postman a collection Desafio-Cubos-Clinica.postman_collection.json que encontra-se dentro do diretório postman.
- >/postman/Desafio-Cubos-Clinica.postman_collection.json
+ Importar no Postman a collection Schedules-Cubos-Clinica.postman_collection.json que encontra-se dentro do diretório postman.
+ >/postman/Schedules-Cubos-Clinica.postman_collection.json 
  
  ---
  # Rotas da Aplicação
