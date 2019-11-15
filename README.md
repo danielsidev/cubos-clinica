@@ -35,7 +35,7 @@ $ npm run prod ou npm run prod-win
  >No ambiente de PROD, o gulp gerará um única vez o diretório dist com a transpilação dos arquivos Typescript e acionará o node para levantar a aplicação apontando para o server na raiz do dist.
  ---
  # Estrutura de Dados
- >Por se tratar de um gerenciamento de dados em arquivo json, o mesmo deve conter uma estrutura inicial pré-determinada para reaqlizar a sequence correta para adição e exclusão de registros:
+ >Por se tratar de um gerenciamento de dados em arquivo json, o mesmo deve conter uma estrutura inicial pré-determinada para realizar a sequence correta para adição e exclusão de registros:
 ```
 /** /src/model/data/schedules.json **/
 {
