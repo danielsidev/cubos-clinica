@@ -31,7 +31,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/schedules/day/2019-11-12",
+					"raw": "http://localhost:5000/schedules/day/2019-11-25",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,7 +40,7 @@
 					"path": [
 						"schedules",
 						"day",
-						"2019-11-12"
+						"2019-11-25"
 					]
 				}
 			},
@@ -157,7 +157,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/schedule/4",
+					"raw": "http://localhost:5000/schedule/25",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -165,7 +165,7 @@
 					"port": "5000",
 					"path": [
 						"schedule",
-						"4"
+						"25"
 					]
 				}
 			},
@@ -177,8 +177,13 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "dates",
-						"value": "[ \"2019-11-12\", \"2019-11-20\"]",
+						"key": "start",
+						"value": "2019-11-01",
+						"type": "text"
+					},
+					{
+						"key": "end",
+						"value": "2019-11-26",
 						"type": "text"
 					}
 				],
