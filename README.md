@@ -32,12 +32,23 @@ $ npm run prod ou npm run prod-win
  ----
  >No ambiente de DEV, o gulp ficará assistindo os arquivos .ts, logo a cada alteração em um arquivo .ts, dentro de 5 segundos, um novo arquivo .js será gerado ou atualizado.
  ----
- >No ambiente de PROD, o gulp gerará um única vez o diretório dist com a transpilação dos arquivos Typescript e acionará o node para levantar a aplicação apontando para a raiz o server na raiz do dist.
+ >No ambiente de PROD, o gulp gerará um única vez o diretório dist com a transpilação dos arquivos Typescript e acionará o node para levantar a aplicação apontando para o server na raiz do dist.
+ ---
+ # Estrutura de Dados
+ >Por se tratar de um gerenciamento de dados em arquivo json, o mesmo deve conter uma estrutura inicial pré-determinada para reaqlizar a sequence correta para adição e exclusão de registros:
+```
+/** /src/model/data/schedules.json **/
+{
+    sequence:0,
+    schedules:[]
+}
+``` 
+ 
  ---
  # Postman - Testes
  ---
  Importar no Postman a collection Desafio-Cubos-Clinica.postman_collection.json que encontra-se dentro do diretório postman.
- /postman/Desafio-Cubos-Clinica.postman_collection.json
+ >/postman/Desafio-Cubos-Clinica.postman_collection.json
  
  ---
  # Rotas da Aplicação
