@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "7bf6b98d-5dd5-40b1-a13d-5be866131f02",
+		"name": "Schedules-Cubo-Clinical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Schedules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/schedules/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedules",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Schedules From Specific Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/schedules/day/2019-11-12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedules",
+						"day",
+						"2019-11-12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register New Schedule Rule-  Specific Day",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"employee\":\"Dra. Silvana\",\n            \"day\":\"2019-11-25\",\n            \"weekly\":false,\n            \"week_days\": [], \n            \"daily\":false,\n            \"intervals\": [{ \"start\": \"08:10\", \"end\": \"08:30\" }, { \"start\": \"09:30\", \"end\": \"10:00\" }]\n \t\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register New Schedule Rule - Daily",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"employee\":\"Dra. Chris\",\n            \"day\":null,\n            \"weekly\":false,\n            \"week_days\": [], \n            \"daily\":true,\n            \"intervals\": [{ \"start\": \"07:00\", \"end\": \"07:30\" }, { \"start\": \"07:30\", \"end\": \"08:00\" }]\n \t\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register New Schedule Rule - Weekly",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"employee\":\"Dr. Gustavo\",\n            \"day\":null,\n            \"weekly\":true,\n            \"week_days\": [\"Terça-feira\", \"Quinta-feira\"], \n            \"daily\":false,\n            \"intervals\": [{ \"start\": \"13:15\", \"end\": \"13:45\" }, { \"start\": \"14:00\", \"end\": \"14:30\" }]\n \t\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/schedule/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Schedules From Date Intervals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "dates",
+						"value": "[ \"2019-11-12\", \"2019-11-20\"]",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/schedules/dates/intervals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedules",
+						"dates",
+						"intervals"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
