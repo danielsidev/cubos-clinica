@@ -331,8 +331,8 @@ Example:
 |key | end: string| 
 |Format  |  YYY-MM-DD | 
 |Example  |  |
-|start | 2019-11-19  |
-|end  | 2019-11-25 |
+|start | 2019-11-01  |
+|end  | 2019-11-26 |
 
 |Response JSON| Status 200| 
 |---|---|  
